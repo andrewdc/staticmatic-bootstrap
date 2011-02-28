@@ -1,10 +1,9 @@
-source :gemcutter
-#
+source 'http://rubygems.org'
+
 gem "rack"
 gem "staticmatic"
 gem "haml"
 gem "compass"
-gem "coderay"
-gem "haml-coderay"
-gem "grit"
-gem "RedCloth"
+
+# Prefer this over RedCloth
+gem "maruku", ">= 0.6.0"

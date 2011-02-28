@@ -1,15 +1,28 @@
 ROOT = File.join(File.dirname(__FILE__), '/')
-puts "Site root is: " + File.expand_path(ROOT)
 
-output_style        = :expanded
-project_path        = ROOT               # must be set for Compass to work 
-sass_dir            = "src/stylesheets"  # dir containing Sass / Compass source files
-http_path           = "/"                # root when deployed
-css_dir             = "site/stylesheets" # final CSS
-images_dir          = "site/images"      # final images
-http_images_path    = "/images"
-line_comments       = false
+# Project path, must be set for Compass to work 
+project_path          = ROOT
 
+# HTTP paths
+http_path             = '/'
+http_stylesheets_path = '/stylesheets'
+http_images_path      = '/images'
+http_javascripts_path = '/javascripts'
 
-# To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = true
+# File system locations
+sass_dir              = 'src/stylesheets'
+css_dir               = 'site/stylesheets'
+images_dir            = 'site/images'
+javascripts_dir       = 'site/javascripts'
+
+# Set to true for easier debugging
+line_comments         = false
+
+# CSS output style - :nested, :expanded, :compact, or :compressed
+output_style          = :expanded
+
+# Determine whether Compass asset helper functions generate relative
+# or absolute paths
+relative_assets       = true
+
+# Learn more: http://compass-style.org/docs/tutorials/configuration-reference/
